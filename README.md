@@ -1,3 +1,7 @@
+# check out the website
+
+[Click here](https://upbeat-goodall-e9b450.netlify.app/) to check the working website
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
