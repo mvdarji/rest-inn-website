@@ -1,6 +1,18 @@
+import Header from './Header';
+import Hero from './Hero';
+import PropertyTypeLists from './PropertyTypeLists';
+import BestSellerLists from './BestSellerLists';
+import Footer from './Footer';
+
 const App = () =>{
 	return(
-		<h1>Just getting started..</h1>
+		<>
+			<Header/>
+			<Hero/>
+			<PropertyTypeLists/>
+			<BestSellerLists/>
+			<Footer/>
+		</>
 	)
 }
 
