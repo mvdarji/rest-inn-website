@@ -1,8 +1,6 @@
-const PropertyItem = () => {
+const PropertyItem = (props) => {
     return (
-        <div>
-            This is a property
-        </div>
+        <div>{props.title}</div>
     )
 }
 

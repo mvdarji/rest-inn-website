@@ -1,7 +1,7 @@
-const PropertyTypeItem = () => {
+const PropertyTypeItem = (props) => {
     return (
         <div>
-            This is property type 
+            {props.type} 
         </div>
     )
 }
