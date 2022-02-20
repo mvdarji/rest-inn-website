@@ -6,7 +6,7 @@ import Footer from './Footer';
 import { useState, useEffect } from 'react';
 
 const App = () =>{
-	let [properties, setProperties] = useState([]);
+	// let [properties, setProperties] = useState([]);
 	let [bestSellerProperties, setBestSellerProperties] = useState([]);
 	let [propTypes, setPropTypes] = useState([]);
 
@@ -20,7 +20,7 @@ const App = () =>{
 		.then( data => {
 			let bestSellerProps = data.filter( property => property.bestSeller);
 			setBestSellerProperties(bestSellerProps);
-			setProperties(data);
+			// setProperties(data);
 		})
 		.catch( error => {
 			console.error(error);
