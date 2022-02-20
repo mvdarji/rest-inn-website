@@ -1,0 +1,96 @@
+{
+	"properties": [
+		{
+			"id": 1,
+			"image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
+			"title": "1 VILLEA by Yellow Petals",
+			"description": "Desc 1, Perfectly located for a trip",
+			"price": 106,
+			"type": "b&b",
+			"houseRules": [
+				"Rule no 1",
+				"Rule no 2",
+				"Rule no 3",
+				"Rule no 4"
+			],
+			"amenities": [
+				"1 amenities",
+				"2 amenities",
+				"3 amenities",
+				"4 amenities"
+			],
+			"location": "Seychelles Islands",
+			"bestSeller": true
+		},
+		{
+			"id": 2,
+			"image": "https://a0.muscache.com/im/pictures/102682433/d18e6564_original.jpg?im_w=720",
+			"title": "2 VILLEA by Yellow Petals",
+			"description": "Desc 1, Perfectly located for a trip",
+			"price": 106,
+			"type": "b&b",
+			"houseRules": [
+				"Rule no 5",
+				"Rule no 6",
+				"Rule no 7"
+			],
+			"amenities": [
+				"5 amenities",
+				"6 amenities",
+				"7 amenities",
+				"8 amenities",
+				"9 amenities"
+			],
+			"location": "Seychelles Islands",
+			"bestSeller": false
+		},
+		{
+			"id": 3,
+			"image": "https://a0.muscache.com/im/pictures/102681995/f8ff259c_original.jpg?im_w=720",
+			"title": "3 VILLEA by Yellow Petals",
+			"description": "Desc 1, Perfectly located for a trip",
+			"price": 106,
+			"type": "b&b",
+			"houseRules": [
+				"Rule no 5"
+			],
+			"amenities": [
+				"5 amenities",
+				"6 amenities",
+				"7 amenities"
+			],
+			"location": "Seychelles Islands",
+			"bestSeller": true
+		}
+	],
+	"propertyTypes": [
+		{
+			"id": 1,
+			"type": "apartments"
+		},
+		{
+			"id": 2,
+			"type": "resorts"
+		},
+		{
+			"id": 3,
+			"type": "condos"
+		},
+		{
+			"id": 4,
+			"type": "b&b"
+		},
+		{
+			"id": 5,
+			"type": "hotels"
+		},
+		{
+			"id": 6,
+			"type": "ranodm type"
+		},
+		{
+			"id": 7,
+			"type": "super random type"
+		}
+	]
+}
