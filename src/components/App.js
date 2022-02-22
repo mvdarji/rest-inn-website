@@ -1,47 +1,22 @@
-import Header from './Header';
-import Hero from './Hero';
-import PropertyTypeLists from './PropertyTypeLists';
-import BestSellerLists from './BestSellerLists';
-import Footer from './Footer';
-import { useState, useEffect } from 'react';
+// pages componenet
+import HomePage from '../pages/HomePage';
+import LoginPage from '../pages/LoginPage';
+import SignUpPage from '../pages/SignUpPage';
+import PropListingsPage from '../pages/PropListingsPage'
+// router components
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
-const App = () =>{
-	// let [properties, setProperties] = useState([]);
-	let [bestSellerProperties, setBestSellerProperties] = useState([]);
-	let [propTypes, setPropTypes] = useState([]);
-
-	// get data from API
-	const allPropertiesApiURL = 'http://localhost:1000/properties';
-	const propertiesTypeApiURL = 'http://localhost:1000/propertyTypes';
-
-	useEffect(() => {
-		fetch(allPropertiesApiURL)
-		.then( resp => resp.json() )
-		.then( data => {
-			let bestSellerProps = data.filter( property => property.bestSeller);
-			setBestSellerProperties(bestSellerProps);
-			// setProperties(data);
-		})
-		.catch( error => {
-			console.error(error);
-		});
-
-		fetch(propertiesTypeApiURL)
-		.then( resp => resp.json() )
-		.then( data => setPropTypes(data))
-		.catch( error => {
-			console.error(error);
-		});
-	}, []);
-
+const App = () => {
 	return(
-		<>
-			<Header/>
-			<Hero/>
-			<PropertyTypeLists allPropTypes={propTypes}/>
-			<BestSellerLists allProperties={bestSellerProperties}/>
-			<Footer/>
-		</>
+		// setting up router
+		<BrowserRouter>
+			<Routes>
+				<Route path='/' element={<HomePage/>} />
+				<Route path='signup' element={<SignUpPage/>} />
+				<Route path='login' element={<LoginPage/>} />
+				<Route path='properties' element={<PropListingsPage/>} />
+			</Routes>
+		</BrowserRouter>			
 	)
 }
 
