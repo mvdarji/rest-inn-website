@@ -1,7 +1,7 @@
 const PropertyTypeItem = (props) => {
     return (
         <div>
-            {props.type} 
+            {props.propType.type}
         </div>
     )
 }

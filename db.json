@@ -28,7 +28,7 @@
 			"title": "2 VILLEA by Yellow Petals",
 			"description": "Desc 1, Perfectly located for a trip",
 			"price": 106,
-			"type": "b&b",
+			"type": "apartments",
 			"houseRules": [
 				"Rule no 5",
 				"Rule no 6",
@@ -138,31 +138,38 @@
 	"propertyTypes": [
 		{
 			"id": 1,
-			"type": "apartments"
+			"type": "apartments",
+			"image": "https://a0.muscache.com/im/pictures/102681995/f8ff259c_original.jpg?im_w=720"
 		},
 		{
 			"id": 2,
-			"type": "resorts"
+			"type": "resorts",
+			"image": "https://a0.muscache.com/im/pictures/102681995/f8ff259c_original.jpg?im_w=720"
 		},
 		{
 			"id": 3,
-			"type": "condos"
+			"type": "condos",
+			"image": "https://a0.muscache.com/im/pictures/102681995/f8ff259c_original.jpg?im_w=720"
 		},
 		{
 			"id": 4,
-			"type": "b&b"
+			"type": "b&b",
+			"image": "https://a0.muscache.com/im/pictures/102681995/f8ff259c_original.jpg?im_w=720"
 		},
 		{
 			"id": 5,
-			"type": "hotels"
+			"type": "hotels",
+			"image": "https://a0.muscache.com/im/pictures/102681995/f8ff259c_original.jpg?im_w=720"
 		},
 		{
 			"id": 6,
-			"type": "ranodm type"
+			"type": "ranodm type",
+			"image": "https://a0.muscache.com/im/pictures/102681995/f8ff259c_original.jpg?im_w=720"
 		},
 		{
 			"id": 7,
-			"type": "super random type"
+			"type": "super random type",
+			"image": "https://a0.muscache.com/im/pictures/102681995/f8ff259c_original.jpg?im_w=720"
 		}
 	]
 }

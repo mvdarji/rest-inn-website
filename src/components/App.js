@@ -18,6 +18,8 @@ const App = () => {
 				<Route path='login' element={<LoginPage/>} />
 				<Route path='properties' element={<PropListingsPage/>} />
 				<Route path='properties/:id' element={<PropDescPage/>} />
+				<Route path='propertyTypes/:type' element={<PropTypePage />} />
+
 			</Routes>
 		</BrowserRouter>			
 	)
