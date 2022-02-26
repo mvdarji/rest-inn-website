@@ -41,7 +41,7 @@ const HomePage = () => {
 		<Header/>
 		{/* <Hero/> */}
         {/* <PropertyTypeLists/> */}
-        {/* <BestSellerLists /> */}
+        <BestSellerLists />
         {/* <Footer/> */}
 		</>
 	)
