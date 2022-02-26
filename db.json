@@ -61,6 +61,78 @@
 			],
 			"location": "Seychelles Islands",
 			"bestSeller": true
+		},
+		{
+			"id": 4,
+			"image": "https://a0.muscache.com/im/pictures/102681995/f8ff259c_original.jpg?im_w=720",
+			"title": "4 VILLEA by Yellow Petals",
+			"description": "Desc 1, Perfectly located for a trip",
+			"price": 106,
+			"type": "resorts",
+			"houseRules": [
+				"Rule no 5"
+			],
+			"amenities": [
+				"45 amenities",
+				"6 amenities",
+				"7 amenities"
+			],
+			"location": "boo Islands",
+			"bestSeller": true
+		},
+		{
+			"id": 5,
+			"image": "https://a0.muscache.com/im/pictures/102681995/f8ff259c_original.jpg?im_w=720",
+			"title": "5 VILLEA by Yellow Petals",
+			"description": "Desc 1, Perfectly located for a trip",
+			"price": 566,
+			"type": "condos",
+			"houseRules": [
+				"Rule no 5"
+			],
+			"amenities": [
+				"5 amenities",
+				"6 amenities",
+				"7 amenities"
+			],
+			"location": "Seychelles Islands",
+			"bestSeller": true
+		},
+		{
+			"id": 6,
+			"image": "https://a0.muscache.com/im/pictures/102681995/f8ff259c_original.jpg?im_w=720",
+			"title": "6 VILLEA by Yellow Petals",
+			"description": "Desc 1, Perfectly located for a trip",
+			"price": 699,
+			"type": "condos",
+			"houseRules": [
+				"Rule no 4444"
+			],
+			"amenities": [
+				"5 amenities",
+				"6 amenities",
+				"7 amenities"
+			],
+			"location": "Seychelles Islands",
+			"bestSeller": false
+		},
+		{
+			"id": 7,
+			"image": "https://a0.muscache.com/im/pictures/102681995/f8ff259c_original.jpg?im_w=720",
+			"title": "7 VILLEA by Yellow Petals",
+			"description": "Desc 1, Perfectly located for a trip",
+			"price": 788,
+			"type": "condos",
+			"houseRules": [
+				"Rule no 5"
+			],
+			"amenities": [
+				"5 amenities",
+				"6 amenities",
+				"7 amenities"
+			],
+			"location": "Seychelles Islands",
+			"bestSeller": true
 		}
 	],
 	"propertyTypes": [
