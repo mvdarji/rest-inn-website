@@ -5,6 +5,7 @@ import SignUpPage from '../pages/SignUpPage';
 import PropListingsPage from '../pages/PropListingsPage';
 import PropTypePage from '../pages/PropTypePage';
 import PropDescPage from '../pages/PropDescPage';
+import NotFound404 from '../pages/NotFound404';
 // router components
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -19,7 +20,7 @@ const App = () => {
 				<Route path='properties' element={<PropListingsPage/>} />
 				<Route path='properties/:id' element={<PropDescPage/>} />
 				<Route path='propertyTypes/:type' element={<PropTypePage />} />
-
+				<Route path='*' element={<NotFound404 />} />
 			</Routes>
 		</BrowserRouter>			
 	)
