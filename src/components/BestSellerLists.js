@@ -21,6 +21,7 @@ const BestSellerLists = (props) => {
                     maxNoOfBestSellerProps--;
                     return singleProp;
                 }
+				return false;
             } );
             setBestSellerProps(bestSellers);
         })
