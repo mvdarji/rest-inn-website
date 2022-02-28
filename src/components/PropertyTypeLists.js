@@ -23,11 +23,11 @@ const PropertyTypeLists = () => {
                     to={`propertyTypes/${propType.type}`}
                     key={propType.id} 
                 >
-
                     <PropertyTypeItem                         
                         id={propType.id} 
                         propType={propType}
                     />
+                    <img src={propType.image} alt={propType.type}/>
                 </Link>
             ))}
         </div>
