@@ -3,6 +3,7 @@
 /* colors */
 :root{
     --white: #fff;
+    --darGrey: #333;
     --main: #ff385c;
     --lightShadow: rgb(0 0 0 / 8%) 0px 1px 12px;
 }
@@ -20,11 +21,15 @@ input, button{border: none;outline: none;background-color: transparent;}
 input:focus, input:focus-visible{outline: none;border: none;}
 ul, li{list-style: none;}
 body{font-family: 'Lato', arial, sans-serif;font-weight: 400;font-size: 16px;}
+#root{display: flex;flex-direction: column;min-height: 100vh;}
+#main{flex: 1 0 auto;}
 .hide{display: none !important;}
 .container{max-width: 1100px;padding: 0 15px;margin: auto;}
 .fa{color: var(--main);font-size: 20px;}
 .mob-show{display: none;}
 .icon-btn{display: inline-flex;justify-content: center;align-items: center; width: 40px;height: 40px;border: 2px solid var(--main);border-radius: 10px;}
+.text-center{text-align: center;}
+.logo{font-size: 35px;}
 
 @media only screen and (max-width:767px){
     .fa{font-size: 17px;}
