@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 import PropertyListingsItem from '../components/PropertyListingsItem';
+import Footer from '../components/Footer';
 
 const PropListingsPage = () => {
 	// using state for all properties lists
@@ -16,19 +17,24 @@ const PropListingsPage = () => {
 	}, []);
 
 	return (
-		<div>
-			{properties.map(property => (
-				<Link 
-					to={`/properties/${property.id}`} 
-					key={property.id}
-				>
-					<PropertyListingsItem 						
+		<>
+		<Header/>
+		<div id="main">
+			<div className="container">
+				<h5 className="section-title">all properties</h5>
+				<div className="all-properties-listings">
+					{properties.map(property => (
+						<PropertyListingsItem 	
+						key={property.id}					
 						id={property.id}
 						singleProperty={property}
 					/>
-				</Link>
-			))}
+					))}
+				</div>
+			</div>
 		</div>
+        <Footer/>
+		</>
 	)
 }
 
