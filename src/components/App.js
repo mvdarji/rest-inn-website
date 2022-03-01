@@ -1,3 +1,5 @@
+// SITE URL: https://rest-inn-mvdarji.netlify.app/
+
 // pages componenet
 import HomePage from '../pages/HomePage';
 import LoginPage from '../pages/LoginPage';
@@ -6,6 +8,8 @@ import PropListingsPage from '../pages/PropListingsPage';
 import PropTypePage from '../pages/PropTypePage';
 import PropDescPage from '../pages/PropDescPage';
 import NotFound404 from '../pages/NotFound404';
+// css
+import '../assets/css/App.css';
 // router components
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
