@@ -31,12 +31,12 @@ const Header = () => {
 					<a href='#' className='search-icon-btn mob-show' onClick={toggleSearch}><FaSearch className="fa" /></a>
 
 					<div className="header-links-wrap">
-						<Link to='properties' className='mob-hide'>Vacation Properties</Link>
+						<Link to='/properties' className='mob-hide'>Vacation Properties</Link>
 						<a href='#' className='user-icon-btn icon-btn' onClick={toggleDropdown}><FaUser className="fa" /></a>
 						<ul id="dropdown-links" className="hide">						
-							<li><Link to='signup'>Sign Up</Link></li>
-							<li><Link to='login'>Log In</Link></li>
-							<li className='mob-show'><Link to='properties'>Vacation Properties</Link></li>
+							<li><Link to='/signup'>Sign Up</Link></li>
+							<li><Link to='/login'>Log In</Link></li>
+							<li className='mob-show'><Link to='/properties'>Vacation Properties</Link></li>
 						</ul>					
 					</div>
 				</div>
