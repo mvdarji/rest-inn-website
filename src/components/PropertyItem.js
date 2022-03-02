@@ -54,31 +54,6 @@ const PropertyItem = (props) => {
 					</ul>
 				</div>
 			</div>
-
-			
-
-            {/* <p>Location: {singleProp.location}</p>
-            <p>Title: {singleProp.title}</p>
-            <p>description: {singleProp.description}</p>
-            <p>Price: ${singleProp.price}</p>
-            <p>type: {singleProp.type}</p>
-            <p>
-                House Rules
-                <ul>
-                    {singleProp.houseRules.map(rule => 
-                        <li>{rule}</li>
-                    )}
-                </ul>
-            </p>
-            <p>
-                Amenities
-                <ul>
-                    {singleProp.amenities.map(amenity => 
-                        <li>{amenity}</li>
-                    )}
-                </ul>
-            </p>
-            <p>Bestseller: {(singleProp.bestSeller) ? 'Yes':'No'}</p> */}
         </div>
     )
 }
