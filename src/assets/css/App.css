@@ -27,7 +27,7 @@ body{font-family: 'Lato', arial, sans-serif;font-weight: 400;font-size: 16px;}
 .hide{display: none !important;}
 .container{max-width: 1100px;padding: 0 15px;margin: auto;}
 .img-resp{display: block;width: 100%;height: auto;}
-.img-wrap{overflow: hidden;}
+.img-wrap{overflow: hidden;border-radius: 10px;}
 .img-wrap img{transition: all 0.3s linear;transform: scale(1.1);}
 a:hover .img-wrap img{transform: scale(1);}
 .fa{color: var(--main);font-size: 20px;}
@@ -39,7 +39,7 @@ a:hover .primary-btn, .primary-btn:hover{background: transparent;color: var(--ma
 .icon-btn{display: inline-flex;justify-content: center;align-items: center; width: 40px;height: 40px;border: 2px solid var(--main);border-radius: 10px;}
 .text-center{text-align: center;}
 .logo{font-size: 35px;}
-.section-title{text-transform: uppercase;font-size: 24px;letter-spacing: 3px;margin-bottom: 20px;position: relative;padding-bottom: 20px;text-align: center;}
+.section-title{text-transform: uppercase;font-size: 24px;line-height: 40px;letter-spacing: 3px;margin-bottom: 20px;position: relative;padding-bottom: 20px;text-align: center;}
 .section-title:after {content: '';position: absolute;bottom: 0;left: 50%;transform: translateX(-50%); width: 125px;height: 2px;background: var(--main);}
 
 @media only screen and (max-width:767px){

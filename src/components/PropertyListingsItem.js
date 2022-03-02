@@ -14,7 +14,7 @@ const PropertyListingsItem = (props) => {
                     <div className="prop-listing-content-wrap">
                         <div className="prop-listing-content">
                             <h5 className="prop-listing-title">{singleProp.title}</h5>
-                            <p className="prop-listing-loc">{singleProp.location}</p>
+                            <p className="prop-listing-loc"><em>{singleProp.location}</em></p>
                             <p className="prop-listing-type icon-text-wrap">
                                 <FaHouseUser className="fa" />
                                 {singleProp.type}

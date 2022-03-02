@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Header from '../components/Header';
 import PropertyItem from '../components/PropertyItem';
+import Footer from '../components/Footer';
 
 const PropDescPage = () => {
 	const {id} = useParams();
@@ -29,13 +31,19 @@ const PropDescPage = () => {
 
 
 	return (
-		<div>
-		<p>Prop desc page</p>
-		<PropertyItem 						
-			id={singleProp.id}
-			singleProperty={singleProp}
-		/>
+		<>
+		<Header/>
+		<div id="main">
+			<div className="container">
+				<h5 className="section-title">{singleProp.title}</h5>
+				<PropertyItem 						
+					id={singleProp.id}
+					singleProperty={singleProp}
+				/>
+			</div>
 		</div>
+        <Footer/>
+		</>
 	)
 }
 

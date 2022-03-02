@@ -6,13 +6,13 @@
 .prop-listing-item-wrap:last-child{padding-bottom: 0;margin-bottom: 0;border: none;}
 .prop-listing-title{font-size: 20px; line-height: 140%;margin-bottom: 10px;}
 .prop-listing-loc{margin-bottom: 13px;color: #5a5a5a;}
-p.prop-listing-type{font-weight: bold;letter-spacing: 1px;font-size: 15px;color: #000;text-transform: uppercase;}
-.best-seller{margin-top: 15px;color: var(--green);font-weight:700;}
+.prop-listing-content .icon-text-wrap{color: #333;}
+.best-seller{margin-top: 15px;}
 .best-seller .fa{color: var(--green);}
 .prop-listing-price{font-weight: 700;font-size: 20px;margin-bottom: 10px;color: #000;}
+.view-listing-btn{text-align: center;}
 
 @media only screen and (max-width:599px){
     .prop-listing-item{gap: 20px;grid-template-columns: 1fr}
     .prop-listing-item-wrap{padding-bottom: 15px;margin-bottom: 15px;}
-    .view-listing-btn{text-align: center;}
 }
