@@ -1,0 +1,4 @@
+.prop-not-found-wrap .icon-text-wrap{display: inline-flex;}
+.prop-not-found-wrap{font-size: 18px;}
+.prop-not-found-wrap a{color: var(--main);}
+.prop-not-found-wrap a:hover{text-decoration: underline;}
