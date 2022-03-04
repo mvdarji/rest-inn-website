@@ -1,0 +1,9 @@
+.best-sellers-wrap{display: grid;grid-template-columns: repeat(4, 1fr); gap: 10px;}
+.best-sellers-wrap .img-wrap{margin-bottom: 15px;}
+.best-seller-price{margin-bottom: 10px;color: var(--main);font-weight: 700;}
+.best-seller-loc{font-size: 20px;line-height: 28px;}
+
+
+@media only screen and (max-width: 767px){
+    .best-sellers-wrap{grid-template-columns: repeat(2, 1fr);}
+}

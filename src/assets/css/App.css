@@ -26,8 +26,10 @@ body{font-family: 'Lato', arial, sans-serif;font-weight: 400;font-size: 16px;}
 #main{flex: 1 0 auto;padding: 30px 0}
 .hide{display: none !important;}
 .container{max-width: 1100px;padding: 0 15px;margin: auto;}
+.divider{margin-bottom: 50px;}
 .img-resp{display: block;width: 100%;height: auto;}
-.img-wrap{overflow: hidden;border-radius: 10px;}
+.img-wrap{overflow: hidden;border-radius: 10px;position: relative;}
+.best-seller-fa{position: absolute;top: 15px;left: 15px;z-index: 2;}
 .img-wrap img{transition: all 0.3s linear;transform: scale(1.1);}
 a:hover .img-wrap img{transform: scale(1);}
 .fa{color: var(--main);font-size: 20px;}

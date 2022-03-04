@@ -1,15 +1,13 @@
-// import PropertyItem from './PropertyItem';
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import PropertyListingsItem from './PropertyListingsItem';
+import BestSellerItem from './BestSellerItem';
 
 const BestSellerLists = (props) => {
     // using state for all best seller properties lists
 	let [bestSellerProps, setBestSellerProps] = useState([]);
-    let bestSellers = [];
-
+    
 	// get all properties
 	useEffect( () => {
+        let bestSellers = [];
         let maxNoOfBestSellerProps = 4;
 		const allPropertiesApiURL = `http://localhost:1000/properties`;
 		fetch(allPropertiesApiURL)
@@ -29,21 +27,19 @@ const BestSellerLists = (props) => {
 	}, []);
 
     return(
-        <div >
-            <h2>This is Best Seller section</h2>
+		<div className='container divider'>
+			<h5 className="section-title">Our Best Seller</h5>
 
-            {bestSellerProps.map(property => (
-				<Link 
-					to={`/properties/${property.id}`} 
-					key={property.id}
-				>
-					<PropertyListingsItem 						
-						id={property.id}
-						singleProperty={property}
-					/>
-				</Link>
-			))}
-            
+            <div className="best-sellers-wrap">
+                {bestSellerProps.map(singleProperty => (
+                    <BestSellerItem                         
+                        key={singleProperty.id} 
+                        id={singleProperty.id} 
+                        singleProp={singleProperty}
+                    />
+                ))}
+            </div>
+
         </div>
     )
 }
