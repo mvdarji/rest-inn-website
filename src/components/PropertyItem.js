@@ -1,4 +1,5 @@
 import '../assets/css/PropertyItem.css';
+import { FaHeart } from "react-icons/fa";
 import {FaHouseUser, FaStar, FaClipboardCheck} from 'react-icons/fa'
 
 const PropertyItem = (props) => {
@@ -6,6 +7,7 @@ const PropertyItem = (props) => {
     return (
         <div className="single-prop-wrap">
 			<div className="img-wrap">
+				{ (singleProp.bestSeller) ? <FaHeart className="fa best-seller-fa" /> : '' }			
             	<img src={singleProp.image} className="img-resp" alt="Property" />
 			</div>
 

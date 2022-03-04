@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaHouseUser, FaStar } from "react-icons/fa";
+import { FaHeart, FaHouseUser, FaStar } from "react-icons/fa";
 import "../assets/css/PropertyListingsItem.css";
 
 const PropertyListingsItem = (props) => {
@@ -9,6 +9,7 @@ const PropertyListingsItem = (props) => {
             <Link to={`/properties/${singleProp.id}`} className="prop-listing-item-a">
                 <div className="prop-listing-item">
                     <div className="img-wrap">
+                        { (singleProp.bestSeller) ? <FaHeart className="fa best-seller-fa" /> : '' }
                         <img src={singleProp.image} className="img-resp" alt="Property" />
                     </div>
                     <div className="prop-listing-content-wrap">
