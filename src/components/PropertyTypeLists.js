@@ -14,7 +14,7 @@ const PropertyTypeLists = () => {
         .catch(error => console.log(error));
     }, []);
     return(
-        <div className='container'>
+        <div className='container divider'>
 			<h5 className="section-title">Browse by Property Types</h5>
 
             <div className="prop-types-wrap">
