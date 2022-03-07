@@ -1,0 +1,10 @@
+.form-wrap{max-width: 800px;border: 1px solid rgb(221, 221, 221); border-radius: 12px; padding: 30px; box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;margin: auto;font-size: 18px;}
+.form-wrap a{color: var(--main);}
+.form-wrap a:hover{text-decoration: underline;}
+.input-group{position: relative;margin-bottom: 45px;}
+.input-group label{font-weight: 700;}
+.input-group input, .input-group input:focus, .input-group input:focus-visible{border-bottom: 1px solid #c8c8c8;}
+.input-group input{padding: 10px 0;width: 100%;margin-bottom: 3px;}
+.input-group .error-msg{color: #ff0000;}
+.sign-up-btn{margin-bottom: 20px;}
+#success-msg{background: #95cc95; border-radius: 10px; padding: 10px 0; margin-bottom: 30px;border: 1px solid #00a900}

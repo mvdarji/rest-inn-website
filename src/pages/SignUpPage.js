@@ -1,7 +1,17 @@
+import Header from '../components/Header';
+import SignupForm from '../components/SignupForm';
+import Footer from '../components/Footer';
+
 const SignUpPage = () => {
-  return (
-    <div>SignUpPage</div>
-  )
+	return (
+		<>
+		<Header/>
+		<div id="main">
+			<SignupForm />			
+		</div>
+        <Footer/>
+		</>
+	)
 }
 
-export default SignUpPage
+export default SignUpPage;
