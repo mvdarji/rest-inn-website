@@ -8,9 +8,9 @@ import Footer from '../components/Footer';
 const PropTypePage = () => {
 	const {type} = useParams();
 	const [typeSpecificProps, setTypeSpecificProps] = useState([]);
-	let filteredProps = [];
-
+	
 	useEffect(() => {
+		let filteredProps = [];
         const allPropsApiURL = `http://localhost:1000/properties`;
 
         fetch(allPropsApiURL)
@@ -20,7 +20,7 @@ const PropTypePage = () => {
 			setTypeSpecificProps(filteredProps);
 		})
         .catch(error => console.log(error));
-	}, []);
+	}, [type]);
 
 	return (
 		<>
