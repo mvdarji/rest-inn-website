@@ -9,7 +9,6 @@ import PropTypePage from '../pages/PropTypePage';
 import PropDescPage from '../pages/PropDescPage';
 import NotFound404 from '../pages/NotFound404';
 // css
-import 'bootstrap/dist/css/bootstrap.css';
 import '../assets/css/App.css';
 // router components
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
