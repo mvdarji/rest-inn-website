@@ -1,3 +1,6 @@
+.prop-type-main-wrap{background: #494949;padding: 25px 0 50px;}
+.prop-type-main-wrap .section-title{color: #fff;z-index: 0;}
+.prop-type-main-wrap .section-title::after{background: #fff;}
 .prop-types-wrap{display: grid;grid-template-columns: repeat(4, 1fr);gap: 10px;}
 .prop-type-a{display: block;position: relative;}
 .prop-type-a:after{content: '';position: absolute;background: rgba(0, 0, 0, 0.3);width: 100%;height: 100%;top: 0;left: 0;border-radius: 10px;transition: all 0.3s linear;}

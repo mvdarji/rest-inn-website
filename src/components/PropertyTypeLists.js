@@ -14,19 +14,21 @@ const PropertyTypeLists = () => {
         .catch(error => console.log(error));
     }, []);
     return(
-        <div className='container divider'>
-			<h5 className="section-title">Browse by Property Types</h5>
+        <div className="prop-type-main-wrap divider">
+            <div className='container'>
+                <h5 className="section-title">Browse by Property Types</h5>
 
-            <div className="prop-types-wrap">
-                {propTypes.map(propType => (
-                    <PropertyTypeItem                         
-                        key={propType.id} 
-                        id={propType.id} 
-                        propType={propType}
-                    />
-                ))}
+                <div className="prop-types-wrap">
+                    {propTypes.map(propType => (
+                        <PropertyTypeItem                         
+                            key={propType.id} 
+                            id={propType.id} 
+                            propType={propType}
+                        />
+                    ))}
+                </div>
+
             </div>
-
         </div>
     )
 }

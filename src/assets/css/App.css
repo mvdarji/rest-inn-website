@@ -16,7 +16,6 @@ html{text-size-adjust:none;scrollbar-color: var(--main) #dedede;scrollbar-width:
 
 /* common css */
 a, a:focus{text-decoration: none;color: inherit;}
-h1, h2, h3, h4, h5, h6{font-weight: 700;}
 a:hover{color: var(--main);}
 input{font: inherit}
 input, button{border: none;outline: none;background-color: transparent;}
@@ -36,7 +35,7 @@ body{font-family: 'Lato', arial, sans-serif;font-weight: 400;font-size: 16px;}
 a:hover .img-wrap img{transform: scale(1);}
 .fa{color: var(--main);font-size: 20px;}
 .mob-show{display: none;}
-.primary-btn{display: inline-block;background: var(--main); padding: 8px 15px 10px;border-radius: 10px; color: var(--white);font-weight: bold; text-transform: uppercase; letter-spacing: 1px;border: 1px solid var(--main);transition: all 0.3s linear;}
+.primary-btn{display: inline-block;background: var(--main); padding: 8px 15px 10px;border-radius: 5px; color: var(--white);font-weight: bold; text-transform: uppercase; letter-spacing: 1px;border: 1px solid var(--main);transition: all 0.3s linear;}
 a:hover .primary-btn, .primary-btn:hover{background: transparent;color: var(--main);}
 .icon-text-wrap{display: flex;align-items: center;text-transform: capitalize;}
 .icon-text-wrap .fa{margin-right: 10px;}
@@ -54,4 +53,5 @@ a:hover .primary-btn, .primary-btn:hover{background: transparent;color: var(--ma
     .mob-show{display: block !important;}
     .icon-btn{width: 35px;height: 35px;}
     .primary-btn{font-size: 14px;padding: 3px 10px 6px;}
+    .section-title{font-size: 20px;line-height:32px}
 }
