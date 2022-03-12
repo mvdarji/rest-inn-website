@@ -45,6 +45,12 @@ a:hover .primary-btn, .primary-btn:hover{background: transparent;color: var(--ma
 .section-title{text-transform: uppercase;font-size: 24px;line-height: 40px;letter-spacing: 3px;margin-bottom: 20px;position: relative;padding-bottom: 20px;text-align: center;z-index: -1;}
 .section-title:after {content: '';position: absolute;bottom: 0;left: 50%;transform: translateX(-50%); width: 125px;height: 2px;background: var(--main);}
 
+/* 404 css */
+.wrap-404{display: flex;align-items: center;justify-content: space-between;padding: 25px 0;}
+.content-404 h1{color: #484848;margin-bottom: 20px;text-transform: uppercase;font-size: 135px;}
+.content-404 p{width: 55%; font-size: 20px; line-height: 30px;}
+
+
 @media only screen and (max-width:767px){
     .divider{margin-bottom: 25px;}
     #main{padding: 20px 0;}
@@ -54,4 +60,10 @@ a:hover .primary-btn, .primary-btn:hover{background: transparent;color: var(--ma
     .icon-btn{width: 35px;height: 35px;}
     .primary-btn{font-size: 14px;padding: 3px 10px 6px;}
     .section-title{font-size: 20px;line-height:32px}
+
+    .wrap-404{flex-direction: column-reverse;}
+    .wrap-404 img{display: block;width: 100%;height: auto;}
+    .content-404{text-align: center;margin-top: 25px;}
+    .content-404 h1{font-size: 80px;}
+    .content-404 p{width: 100%;}
 }
