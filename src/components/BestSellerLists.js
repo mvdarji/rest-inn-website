@@ -9,7 +9,7 @@ const BestSellerLists = (props) => {
 	useEffect( () => {
         let bestSellers = [];
         let maxNoOfBestSellerProps = 4;
-		const allPropertiesApiURL = `http://localhost:1000/properties`;
+		const allPropertiesApiURL = `https://rest-inn-api-mvdarji.herokuapp.com/properties`;
 		fetch(allPropertiesApiURL)
 		.then( resp => resp.json())
 		.then( allProps => {
