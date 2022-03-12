@@ -20,8 +20,7 @@ const SignupForm = () => {
 	const [errorlName, setErrorlName] = useState('');
 
 	// form validation
-	const validateForm = (e) => {
-		e.preventDefault();
+	const validateForm = () => {
 		let isValidated = true;
 		const validEmailFormat = /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+(?:@[A-Za-z0-9-]+)(?:.[A-Za-z0-9-]+)$/;
 
@@ -73,7 +72,8 @@ const SignupForm = () => {
 
 	// add new user via API
 	const signupUser = (e) => {
-		if(validateForm(e)){
+		e.preventDefault();
+		if(validateForm()){
 			const newUSer = {
 				emailId: emailId,
 				password: password,
