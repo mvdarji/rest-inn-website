@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import image1 from '../assets/images/1.jpg';
 import image2 from '../assets/images/2.jpg';
 import image3 from '../assets/images/3.jpg';
+import { Link } from 'react-router-dom';
 
 const carouselItems = [
     {
@@ -31,7 +32,7 @@ const Hero = () => {
                         <img className="img-resp" src={item.img} alt="explore" />
                         <Carousel.Caption>
                             <h3>{item.title}<span>.</span></h3>
-                            <a href={item.link} className='primary-btn'>Explore</a>
+                            <Link to={item.link} className='primary-btn'>Explore</Link>
                         </Carousel.Caption>
                     </Carousel.Item> )
                 })}
