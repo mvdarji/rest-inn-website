@@ -7,7 +7,7 @@
 
 ## Check out the website
 
-Click [here](https://rest-inn-mvdarji.netlify.app/) to have a look at the working website.
+Click [here](https://rest-inn-mvdarji.netlify.app/) to have a look at the working website
 
 ## Installation
 
