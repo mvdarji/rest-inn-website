@@ -1,12 +1,12 @@
-.prop-type-main-wrap{background: #494949;padding: 25px 0 50px;}
-.prop-type-main-wrap .section-title{color: #fff;z-index: 0;}
-.prop-type-main-wrap .section-title::after{background: #fff;}
 .prop-types-wrap{display: grid;grid-template-columns: repeat(4, 1fr);gap: 10px;}
-.prop-type-a{display: block;position: relative;}
-.prop-type-a:after{content: '';position: absolute;background: rgba(0, 0, 0, 0.3);width: 100%;height: 100%;top: 0;left: 0;border-radius: 10px;transition: all 0.3s linear;}
-.prop-type-title{position: absolute;top: 50%;left: 0;transform: translateY(-50%);text-align: center;width: 100%;color: #fff; font-size: 18px;line-height: 26px; z-index: 2; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;transition: all 0.3s linear;}
-.prop-type-a:hover:after{background: transparent;}
-.prop-type-a:hover .prop-type-title{color: var(--main);text-shadow: 1px 1px #fff;transform: none;top: 5px;}
+.prop-type-a{text-align: center; display: flex;justify-content: center;align-items: center;  height: 130px; border-radius: 10px;transition: all 0.3s linear;}
+.prop-type-wrap:nth-child(1) .prop-type-a{background: #ffffbe;}
+.prop-type-wrap:nth-child(2) .prop-type-a{background: #d1ffd1;}
+.prop-type-wrap:nth-child(3) .prop-type-a{background: #cacaff;}
+.prop-type-wrap:nth-child(4) .prop-type-a{background: #ffd3d3;}
+.prop-type-title{font-size: 20px;line-height: 26px; z-index: 2; font-weight: 700; text-transform: capitalize;transition: all 0.3s linear;}
+.prop-type-a:hover{background: #e3e3e3 !important;}
+.prop-type-a:hover .prop-type-title{letter-spacing: 2px;}
 
 @media only screen and (max-width:767px){
     .prop-types-wrap{grid-template-columns: repeat(2, 1fr)}
