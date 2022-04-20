@@ -5,6 +5,7 @@ import { useState, useEffect} from 'react';
 
 const Header = () => {
 	const [searchTerm, setSearchTerm] = useState('');
+	const [searchResults, setSearchResults] = useState([]);
 	const [menuLinks, setMenuLinks] = useState([
 		{
 			to: '/properties',
@@ -58,26 +59,27 @@ const Header = () => {
 	const getSearchResults = (e) => {
 		const searckKW = e.target.value;
 		setSearchTerm(searckKW);
-
-		const ulNode = document.getElementById('search-results');
-		ulNode.innerHTML = '';
+		setSearchResults([]);
 
 		if( searckKW !== ''){
 			fetch(`${process.env.REACT_APP_API_URI}/properties/search?searchTerm=${searckKW}`)
 			.then( resp => resp.json())
 			.then( data => {
+				const results = [];
 				data.forEach(prop => {
-					let liNode = `<li>
-						<a href="/properties/${prop.id}">
-							${prop.title}
-						</a>
-					</li>`;
-					ulNode.innerHTML += liNode;
+					results.push({
+						link: `/properties/${prop.id}`,
+						propTitle: prop.title
+					})
 				});
+				setSearchResults(results);
 			})
 			.catch( error => {
 				console.log(error);
-				ulNode.innerHTML = `<li class="no-results-li">No Results found for '<b>${searckKW}</b>'</li>`;
+				setSearchResults([{
+					link: '/',
+					propTitle: `No results found '${searckKW}'`
+				}])
 			});
 		}
 	}
@@ -100,7 +102,13 @@ const Header = () => {
 						<button>
 							<FaSearch className="fa" />
 						</button>
-						<ul id="search-results"></ul>
+						<ul id="search-results">
+							{searchResults.map( (result, i) => (
+								<li key={i}>
+									<Link to={result.link}>{result.propTitle}</Link>
+								</li>
+							))}
+						</ul>
 					</div>
 				
 					<a href='/' className='search-icon-btn mob-show' onClick={toggleSearch}><FaSearch className="fa" /></a>
