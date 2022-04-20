@@ -3,7 +3,9 @@
 // pages componenet
 import HomePage from '../pages/HomePage';
 import LoginPage from '../pages/LoginPage';
+import LogoutPage from '../pages/LogoutPage';
 import SignUpPage from '../pages/SignUpPage';
+import DashboardPage from '../pages/DashboardPage';
 import PropListingsPage from '../pages/PropListingsPage';
 import PropTypePage from '../pages/PropTypePage';
 import PropDescPage from '../pages/PropDescPage';
@@ -21,6 +23,8 @@ const App = () => {
 				<Route path='/' element={<HomePage/>} />
 				<Route path='signup' element={<SignUpPage/>} />
 				<Route path='login' element={<LoginPage/>} />
+				<Route path='logout' element={<LogoutPage />} />
+				<Route path='dashboard' element={<DashboardPage/>}/>
 				<Route path='properties' element={<PropListingsPage/>} />
 				<Route path='properties/:id' element={<PropDescPage/>} />
 				<Route path='propertyTypes/:type' element={<PropTypePage />} />
