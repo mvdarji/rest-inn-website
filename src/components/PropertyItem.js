@@ -21,7 +21,7 @@ const PropertyItem = (props) => {
 					<p className="single-prop-price">${singleProp.price} CAD</p>
 					<p className="single-prop-type icon-text-wrap">
 						<FaHouseUser className="fa" />
-						{singleProp.type}
+						{singleProp.type.propType}
 					</p>
 					{ (singleProp.bestSeller) ? 
 						<p className="single-prop best-seller icon-text-wrap">

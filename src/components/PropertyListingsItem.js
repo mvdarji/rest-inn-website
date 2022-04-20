@@ -18,7 +18,7 @@ const PropertyListingsItem = (props) => {
                             <p className="prop-listing-loc"><em>{singleProp.location}</em></p>
                             <p className="prop-listing-type icon-text-wrap">
                                 <FaHouseUser className="fa" />
-                                {singleProp.type}
+                                {singleProp.type.propType}
                             </p>
                             { (singleProp.bestSeller) ? 
                                 <p className="best-seller icon-text-wrap">
