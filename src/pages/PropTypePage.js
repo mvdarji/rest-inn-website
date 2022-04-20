@@ -10,15 +10,11 @@ const PropTypePage = () => {
 	const [typeSpecificProps, setTypeSpecificProps] = useState([]);
 	
 	useEffect(() => {
-		let filteredProps = [];
-        const allPropsApiURL = `https://rest-inn-api-mvdarji.herokuapp.com/properties`;
+		const allPropsApiURL = `${process.env.REACT_APP_API_URI}/properties/type/${type}`;
 
         fetch(allPropsApiURL)
         .then(resp => resp.json())
-        .then(data => {
-			filteredProps = data.filter( prop => prop.type === type)
-			setTypeSpecificProps(filteredProps);
-		})
+        .then(data => setTypeSpecificProps(data))
         .catch(error => console.log(error));
 	}, [type]);
 

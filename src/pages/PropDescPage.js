@@ -8,12 +8,12 @@ const PropDescPage = () => {
 	const {id} = useParams();
 	let [singleProp, setSingleProp] = useState(
 		{
-			"id": 0,
+			"id": "",
 			"image": "",
 			"title": "",
 			"description": "",
 			"price": 0,
-			"type": "",
+			"type": {},
 			"houseRules": [],
 			"amenities": [],
 			"location": "",
@@ -22,7 +22,7 @@ const PropDescPage = () => {
 	);
 	
 	useEffect(() => {
-		const propApiURL = `https://rest-inn-api-mvdarji.herokuapp.com/properties/${id}`;
+		const propApiURL = `${process.env.REACT_APP_API_URI}/properties/${id}`;
 		fetch(propApiURL)
 		.then(resp => resp.json())
 		.then(data => setSingleProp(data))

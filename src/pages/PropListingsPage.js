@@ -10,7 +10,7 @@ const PropListingsPage = () => {
 
 	// get all properties
 	useEffect( () => {
-		const allPropertiesApiURL = `https://rest-inn-api-mvdarji.herokuapp.com/properties`;
+		const allPropertiesApiURL = `${process.env.REACT_APP_API_URI}/properties`;
 		fetch(allPropertiesApiURL)
 		.then( resp => resp.json())
 		.then( data => setProperties(data))

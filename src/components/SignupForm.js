@@ -75,13 +75,13 @@ const SignupForm = () => {
 		e.preventDefault();
 		if(validateForm()){
 			const newUSer = {
-				emailId: emailId,
-				password: password,
-				fName: fName,
-				lName: lName
+				firstName: fName,
+				lastName: lName,
+				email: emailId,
+				password: password
 			};
 
-			fetch(`http://localhost:1000/users`, {
+			fetch(`${process.env.REACT_APP_API_URI}/register`, {
 				headers: {
 					'Accept': 'application/json',
 					'Content-Type': 'application/json'
@@ -115,6 +115,18 @@ const SignupForm = () => {
 				<div id='success-msg' className="hide text-center">User has been registered successfully! Click here to <Link to="/login"><b>Login</b></Link></div>
 				<form>
 					<div className="input-group">
+						<label htmlFor="fName">First Name *</label>
+						<input type="text" id="fName" value={fName} onChange={ (e) => { setfName(e.target.value) }}/>
+						<span className="error-msg">{errorfName}</span>						
+					</div>
+
+					<div className="input-group">
+						<label htmlFor="lName">Last Name *</label>
+						<input type="text" id="lName" value={lName} onChange={ (e) => { setlName(e.target.value) }}/>
+						<span className="error-msg">{errorlName}</span>						
+					</div>
+
+					<div className="input-group">
 						<label htmlFor="email">E-mail ID *</label>
 						<input type="email" id="email" value={emailId} onChange={ (e) => { setEmailId(e.target.value) }}/>
 						<span className="error-msg">{errorEmailId}</span>
@@ -130,18 +142,6 @@ const SignupForm = () => {
 						<label htmlFor="cpassword">Confirm Password *</label>
 						<input type="password" id="cpassword" value={cpassword} onChange={ (e) => { setCpassword(e.target.value) }}/>						
 						<span className="error-msg">{errorCpassword}</span>
-					</div>
-
-					<div className="input-group">
-						<label htmlFor="fName">First Name *</label>
-						<input type="text" id="fName" value={fName} onChange={ (e) => { setfName(e.target.value) }}/>
-						<span className="error-msg">{errorfName}</span>						
-					</div>
-
-					<div className="input-group">
-						<label htmlFor="lName">Last Name *</label>
-						<input type="text" id="lName" value={lName} onChange={ (e) => { setlName(e.target.value) }}/>
-						<span className="error-msg">{errorlName}</span>						
 					</div>
 
 					<div className="text-center">

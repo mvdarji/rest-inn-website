@@ -6,7 +6,7 @@ const PropertyTypeLists = () => {
 
     useEffect(() => {
         const MaxNoOfPropTypes = 4;
-        const propTypesApiURL = `https://rest-inn-api-mvdarji.herokuapp.com/propertyTypes?_limit=${MaxNoOfPropTypes}`;
+        const propTypesApiURL = `${process.env.REACT_APP_API_URI}/propertyTypes?limit=${MaxNoOfPropTypes}`;
 
         fetch(propTypesApiURL)
         .then(resp => resp.json())
