@@ -7,4 +7,5 @@
 .input-group input{padding: 10px 0;width: 100%;margin-bottom: 3px;}
 .input-group .error-msg{color: #ff0000;}
 .sign-up-btn{margin-bottom: 20px;}
-#success-msg{background: #95cc95; border-radius: 10px; padding: 10px 0; margin-bottom: 30px;border: 1px solid #00a900}
+#success-msg, #login-error-msg{background: #95cc95; border-radius: 10px; padding: 10px 0; margin-bottom: 30px;border: 1px solid #00a900}
+#login-error-msg{background: #ffcdd5;border-color: #B71C1C;}
