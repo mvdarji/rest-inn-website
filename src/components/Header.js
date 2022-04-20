@@ -5,23 +5,42 @@ import { useState, useEffect} from 'react';
 
 const Header = () => {
 	const [searchTerm, setSearchTerm] = useState('');
-	const [menLinks, setMenLinks] = useState('');
+	const [menuLinks, setMenuLinks] = useState([
+		{
+			to: '/properties',
+			text: 'Vacation Properties'
+		},
+		{
+			to: '/signup',
+			text: 'Sign Up'
+		}
+	]);
+	let links = [];
 
 	useEffect(() => {
-		const ulLinksNode = document.getElementById('dropdown-links');
 		const user = JSON.parse(localStorage.getItem('user'));		
 		if(user === null){
-			setMenLinks(`<li class='mob-show'><a href='/properties'>Vacation Properties</a></li>
-			<li><a href='/signup'>Sign Up</a></li>
-			<li><a href='/login'>Log In</a></li>`);
+			links = [
+				{
+					to: '/login',
+					text: 'Log In'
+				}
+			];
 		}else{
-			setMenLinks(`<li class='mob-show'><a href='/properties'>Vacation Properties</a></li>
-			<li><a href='/signup'>Sign Up</a></li>
-			<li><a href='/logout'>Log out</a></li>
-			<li><a href='/dashboard'>Hello, <span class='tt-c'>${user.firstName}</span>!</a></li>`);
+			const userFirstName = user.firstName;
+			links = [
+				{
+					to: '/logout',
+					text: 'Log out'
+				},
+				{
+					to: '/dashboard',
+					text: `Hello, ${userFirstName.charAt(0).toUpperCase()}${userFirstName.slice(1)}!`
+				}
+			];
 		}
-		ulLinksNode.innerHTML = menLinks;
-	}, [menLinks]);
+		setMenuLinks([...menuLinks, ...links]);
+	}, []);
 
 	// toggle search bar
 	const toggleSearch = (e) => {
@@ -89,7 +108,13 @@ const Header = () => {
 					<div className="header-links-wrap">
 						<Link to='/properties' className='mob-hide'>Vacation Properties</Link>
 						<a href='/' className='user-icon-btn icon-btn' onClick={toggleDropdown}><FaUser className="fa" /></a>
-						<ul id="dropdown-links" className="hide">{menLinks}</ul>					
+						<ul id="dropdown-links" className="hide">
+							{menuLinks.map( (link, i) => (
+								<li key={i} className={(i === 0) ? 'mob-show': ''}>
+									<Link to={link.to}>{link.text}</Link>
+								</li>
+							))}
+						</ul>					
 					</div>
 				</div>
 			</div>
