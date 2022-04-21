@@ -13,7 +13,7 @@ const LoginForm = () => {
 	useEffect(() => {
 		const user = JSON.parse(localStorage.getItem('user'));		
 		if(user !== null){
-			navigate('/welcome', { replace: true});
+			navigate('/dashboard', { replace: true});
 		}
 	});
 
